@@ -13,17 +13,19 @@ function tweetsEditor() {
            <div className='tweet-editor'>
                 <img src= {profile} alt="" className='avatar'/>
                 <div className='tweet-editor-form'>
-                    <input type="text" placeholder='Whats happenning' className='tweet-editor-input'/>
-                </div>
-                <div className='tweet-editor-buttons'>
-                    <div className='tweet-editor-actions'>
+                    <input type="text" placeholder="What's happenning?" className='tweet-editor-input'/>
+                    <div className='tweet-editor-buttons'>
+                        <div className='tweet-editor-actions'>
                         <img src={media} alt="" />
                         <img src={gif} alt="" />
                         <img src={poll} alt="" />
                         <img src={emoji} alt="" />
-                        <img src={schedule} alt="" />
+                        <img src={schedule} alt="" />   
                     </div>
+                    <button className='button'>Tweet</button>
                 </div>
+                </div>
+                
             
            </div>
         </>
