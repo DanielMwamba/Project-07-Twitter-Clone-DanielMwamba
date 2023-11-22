@@ -1,32 +1,26 @@
-import Tweet from "./tweet";
-import avatar from "../images/tweet-profile-photo.png";
+import React from 'react';
+import { Tweet } from "../components"
+import tweetsData from "./tweetsData";
 
-function tweets() {
-    const tweetsDatas = [
-        {
-            id: 1,
-            avatar: "../images/tweet-profile-photo.png" ,
-            title: "CNN",
-            content: "Contenu du premier tweet",
-            
-        },
 
-        {
-            id: 1,
-            avatar: "../images/tweet-profile-photo.png",
-            title: "CNN",
-            content: "Contenu du premier tweet",
-            
-        }
-    ];
+function Tweets() {
+  
+  return (
 
-    return(
-        <div className="tweets">
-            {tweetsDatas.map(tweet =>(
-                <Tweet key= {tweet.id} tweet= {tweet} />
-            ))}
-        </div>
-    )
+    <>
+      <div>
+      {tweetsData.map(tweet => (
+        <Tweet key={tweet.id} tweet={tweet} />
+      ))}
+    </div>
+
+    </>
+     );
 }
 
-export default tweets
+
+
+  
+  
+
+  export default Tweets;
