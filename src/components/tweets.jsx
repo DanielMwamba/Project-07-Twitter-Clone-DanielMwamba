@@ -4,23 +4,19 @@ import tweetsData from "./tweetsData";
 
 
 function Tweets() {
-  
+
   return (
 
     <>
       <div>
-      {tweetsData.map(tweet => (
-        <Tweet key={tweet.id} tweet={tweet} />
-      ))}
-    </div>
+        {tweetsData.map(tweet => (
+          <Tweet key={tweet.id} tweet={tweet} />
+        ))}
+      </div>
 
     </>
-     );
+  );
 }
 
 
-
-  
-  
-
-  export default Tweets;
+export default Tweets;
