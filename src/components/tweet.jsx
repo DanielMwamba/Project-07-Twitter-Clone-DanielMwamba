@@ -1,7 +1,7 @@
 import React from 'react'
 // import {Tweets} from '../components'
 
-function Tweets({ tweet }) {
+function Tweet({ tweet }) {
     return (
 
         <>
@@ -12,7 +12,9 @@ function Tweets({ tweet }) {
                     <div className='tweet-body'>
                         <div className='tweet-title'>
                             <p className='tweet-title-author'> {tweet.title} </p>
-                            <img src={tweet.imgverified} alt="" /> <p className='tweet-title-details'>{tweet.titleDescription} </p>
+                             
+                            <span> <img src={tweet.imgverified} alt="" /> </span>
+                            <p  className='tweet-title-details'>  {tweet.titleDescription} </p>
                         </div>
 
                         <p className='tweet-text'> {tweet.content} </p>
@@ -35,4 +37,4 @@ function Tweets({ tweet }) {
 
 
 
-export default Tweets;
+export default Tweet;
