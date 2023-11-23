@@ -143,7 +143,7 @@ body{
     font-size: 1rem;
 }
 
-.tweet-title span{
+.tweet-title svg{
     width: 1.2rem;
     height: auto;
 }
@@ -182,7 +182,7 @@ body{
     font-size: 1rem;
 }
 
-.tweet-actions span {
+.tweet-actions svg {
     width: 1rem;
     height: auto;
     color: #2F3336;
