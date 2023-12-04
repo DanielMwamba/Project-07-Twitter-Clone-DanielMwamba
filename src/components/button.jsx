@@ -1,7 +1,9 @@
 
-function Button() {
+function Button({style}) {
     return (
-            <button className="button">Tweet</button>
+        
+        <button className={style}>Tweet</button>
+            
     )
 }
 

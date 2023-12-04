@@ -1,15 +1,21 @@
 import React from 'react'
-// import {Tweets} from '../components'
+import {Avatar} from '../components'
+
+
 
 function Tweet({ tweet }) {
     return (
 
         <>
-
+            
+            
             <div className="tweet">
                 <div className='tweet-avatar'>
-                    <img src={tweet.avatar} alt="" />
-                </div>
+                  <Avatar source={tweet.avatar} />
+                  
+                </div> 
+
+                
                 
                 <div className='tweet-content'>
 
@@ -25,12 +31,28 @@ function Tweet({ tweet }) {
                         <div className='tweet-image'> <img src={tweet.Image} alt="" /></div>                   
                     </div>
 
+                   
+
                     <div className='tweet-actions'>
-                            <span className='tweet-action'>  <img src={tweet.iconAction.iconReply} /> {tweet.details.actionCountComments} </span>
-                            <span className='tweet-action'>  <img src={tweet.iconAction.iconRetweet} /> {tweet.details.actionCountRetweets} </span>
-                            <span className='tweet-action'>  <img src={tweet.iconAction.iconReact} /> {tweet.details.actionCountLikes} </span>
-                            <span className='tweet-action'>  <img src={tweet.iconAction.iconShare} /> {tweet.details.actionCountShares} </span>
-                        </div>
+                            <span className='tweet-action'>  
+                                <img src={tweet.iconAction.iconReply} /> 
+                                {tweet.details.actionCountComments} 
+                            </span>
+
+                            <span className='tweet-action'>  
+                                <img src={tweet.iconAction.iconRetweet} /> 
+                                {tweet.details.actionCountRetweets} 
+                            </span>
+
+                            <span className='tweet-action'>  
+                                <img src={tweet.iconAction.iconReact} /> 
+                                {tweet.details.actionCountLikes} 
+                            </span>
+                            <span className='tweet-action'>  
+                                <img src={tweet.iconAction.iconShare} /> 
+                                {tweet.details.actionCountShares} 
+                            </span>
+                    </div>
                 </div>
             </div>
         </>

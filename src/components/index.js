@@ -9,4 +9,5 @@ export { default as TweetEditorActions } from "./tweet-editor-actions";
 // export { default as TweetAvatar } from "./tweet-avatar";
 export { default as Tweet } from "./tweet" ;
 export { default as Tweets } from "./tweets" ;
+export { default as sidebarLeft } from "./sidebar-left" ;
 
