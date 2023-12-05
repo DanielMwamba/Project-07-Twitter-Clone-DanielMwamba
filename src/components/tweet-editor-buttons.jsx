@@ -1,11 +1,11 @@
-import { Button } from '../components';
+import { ButtonTweet } from '../components';
 import {TweetEditorActions} from '../components';
 
 function TweetEditorButtons() {
     return (
         <div className="tweet-editor-buttons">
             <TweetEditorActions/>
-            <Button style={"button"}/>
+            <ButtonTweet style={"button"}/>
         </div>
     )
 }

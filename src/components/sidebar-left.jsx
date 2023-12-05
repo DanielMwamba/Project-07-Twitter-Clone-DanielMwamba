@@ -1,4 +1,4 @@
-import { Button } from '../components';
+import { ButtonTweet } from '../components';
 import {message, explore, lists, twitter, notification, bookmarks, profile, more, home} from '../icons'
 
 
@@ -50,7 +50,7 @@ function SidebarLeft() {
                 <h4>More</h4>
             </div>
 
-            <Button style={"sidebar-left-button"}/>
+            <ButtonTweet style={"sidebar-left-button"}/>
         </div>
     )
 }
